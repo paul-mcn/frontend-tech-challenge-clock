@@ -1,0 +1,57 @@
+.analog-clock__container {
+  margin: 0 auto;
+  position: relative;
+  display: block;
+  border-radius: 50%;
+  background-color: #282828;
+  box-shadow: -10px 10px 20px 0px rgba(0, 0, 0, 0.5);
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+}
+
+.analog-clock__anchor {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.analog-clock__grey-styling {
+  position: absolute;
+  top: 200px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 150px;
+  background: #d9d8dd;
+}
+
+.analog-clock__second-hand {
+  position: absolute;
+  top: -60px;
+  left: -1px;
+  transform: translateY(50px);
+  width: 2px;
+  height: 120px;
+  background: white;
+}
+
+.analog-clock__minute-hand {
+  position: absolute;
+  top: -52.5px;
+  left: -2.5px;
+  transform: translateY(42px);
+  width: 5px;
+  height: 105px;
+  background: white;
+}
+.analog-clock__hour-hand {
+  position: absolute;
+  top: -30px;
+  left: -4px;
+  transform: translateY(20px);
+  width: 8px;
+  height: 60px;
+  background: white;
+}
