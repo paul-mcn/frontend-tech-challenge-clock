@@ -1,9 +1,9 @@
 .digital-clock {
   background: #282828;
-	width: fit-content;
+	width: 200px;
   color: white;
   margin: 100px auto 0;
   font-size: 30px;
   text-align: center;
-	padding: 5px 20px;
+	padding: 5px 0;
 }

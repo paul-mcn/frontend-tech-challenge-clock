@@ -1,7 +1,10 @@
 import { useEffect, useState } from "react";
 
-// useState can be used instead of useContext as Date is global var
-const useTime = (refreshCycle = 100) => {
+// useState can be used instead of useContext as Date is a global var/class
+// As requested, the cycle "Update[s] the time each second". 
+// However, setInterval can be inaccurate. As such the refreshCycle can be reduced for better accuracy
+// Read more: https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#timers
+const useTime = (refreshCycle = 1000) => {
   const [time, setTime] = useState(new Date());
 
   const getHours = () => {
